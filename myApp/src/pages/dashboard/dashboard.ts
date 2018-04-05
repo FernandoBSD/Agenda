@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DashboardPage } from '../dashboard/dashboard';
-import { HomePage } from '../home/home';
-import { SingupPage } from '../singup/singup';
-
-
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the DashboardPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -15,18 +10,16 @@ import { SingupPage } from '../singup/singup';
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-dashboard',
+  templateUrl: 'dashboard.html',
 })
-export class LoginPage {
-
-  sing =SingupPage;
+export class DashboardPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad DashboardPage');
   }
 
 }

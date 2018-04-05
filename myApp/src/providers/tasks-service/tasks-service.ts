@@ -24,7 +24,7 @@ export class TasksServiceProvider {
   }
 
   createTable(){
-    let sql = 'CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT, password TEXT)';
+    let sql = 'CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT, password TEXT, type TEXT)';
     return this.db.executeSql(sql, []);
   }
 
