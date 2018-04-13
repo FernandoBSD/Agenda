@@ -13,34 +13,22 @@ page-login {
     margin-bottom: 5px;
 }
 
-.row{
-  width: 65%;
 
-    margin-left:  auto;
-    margin-right: auto;
-    display: block;
-    background: rgb(38, 102, 102);
-    padding: 30px;
-  border-radius: 15%;
-  box-shadow: 0px /* Right */ 4px /* Down */ 38px /* Blur */ -8px /* Back */  rgb(38, 102, 120);
-}
 .logPanel{
 
   background: rgb(39, 95, 98);
-
-
-
 }
-.buttonLog{
+.logButtons{
 
   margin-left:  auto;
   margin-right: auto;
   margin-top: 10px;
   display: block;
+
 }
 .socialmediaBttns{
 
-  margin-left: 50px;
+  margin-left: 33%;
 }
 
 }
