@@ -1,8 +1,12 @@
+import { SQLite } from '@ionic-native/sqlite';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 import { SingupPage } from '../singup/singup';
+import 'rxjs/add/operator/map';
+import { Http, HttpModule } from '@angular/http';
+
 
 
 
@@ -23,8 +27,18 @@ export class LoginPage {
 
   public sing =SingupPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public httpM: HttpModule,
+              public http: Http) {
   }
+
+  validateLogin(){
+
+
+
+
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');

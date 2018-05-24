@@ -41,6 +41,14 @@ export class TasksServiceProvider {
     .catch(error => Promise.reject(error));
   }
 
+  getSpecifed(name, pass){
+
+    let sql = 'SELECT * FROM users WHERE user= name && password= pass ';
+    return this.db.executeSql(sql, []);
+
+
+  }
+
   create(compilation: any){
     let sql = 'INSERT INTO users(user, password) VALUES(?,?)';
     return this.db.executeSql(sql, [compilation.user, compilation.password]);

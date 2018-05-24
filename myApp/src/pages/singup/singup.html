@@ -15,39 +15,38 @@
 
 <ion-content  padding>
 
-  <form>
-
+  <form id="myForm">
       <ion-list>
           <ion-item >
               <ion-label floating><ion-icon name="person"></ion-icon> Nombre's </ion-label>
-              <ion-input type="text"  ng-model="user.name" ></ion-input>
+              <ion-input type="text" [(ngModel)]="user.name" name="fullname" ></ion-input>
             </ion-item>
           <ion-item >
               <ion-label floating><ion-icon name="person"></ion-icon>  Apellido Paterno</ion-label>
-              <ion-input type="text"  ng-model="user.flastname" ></ion-input>
+              <ion-input type="text"  [(ngModel)]="user.flastname" name="flastname"></ion-input>
             </ion-item>
           <ion-item >
                 <ion-label floating><ion-icon name="person"></ion-icon> Apellido Materno</ion-label>
-                <ion-input type="text"  ng-model="user.mlastname" ></ion-input>
+                <ion-input type="text"  [(ngModel)]="user.mlastname" name="mlastname" ></ion-input>
               </ion-item>
           <ion-item >
               <ion-label floating><ion-icon name="mail"></ion-icon>  Email</ion-label>
-              <ion-input type="email"  ng-model="user.email" ></ion-input>
+              <ion-input type="email"  [(ngModel)]="user.email" name="email" ></ion-input>
             </ion-item>
 
           <ion-item >
             <ion-label floating><ion-icon name="ios-at-outline"></ion-icon>  Username</ion-label>
-            <ion-input type="text"  ng-model="user.username" ></ion-input>
+            <ion-input type="text"  [(ngModel)]="user.username" name="username" ></ion-input>
           </ion-item>
 
           <ion-item >
             <ion-label floating><ion-icon name="lock"></ion-icon>  Password</ion-label>
-            <ion-input type="password" ng-model="user.password" ></ion-input>
+            <ion-input type="password" [(ngModel)]="user.password" name="password" ></ion-input>
           </ion-item>
 
           <ion-item >
               <ion-label floating><ion-icon name="md-contacts"></ion-icon>  Roll</ion-label>
-              <ion-input type="text"  ng-model="user.roll" ></ion-input>
+              <ion-input type="text"  [(ngModel)]="user.roll" name="roll" ></ion-input>
           </ion-item>
 
       </ion-list>
@@ -56,7 +55,7 @@
           <button    ion-button round >
               Create
             </button>
-            <button  color="danger" ion-button round>
+            <button  color="danger" (click)="doClean()" ion-button round>
                 Clear
             </button>
 
